@@ -9,13 +9,11 @@ SmartBoard is a smart business dashboard that allows users to apply one or more 
 •	Generate a Machine Learning model for different purposes (Prediction, Classification…etc.)
 •	Save the generated data model for further analysis (each user/company has his own space to store and restore data model)
 •	Use the predefined model on a new uploaded dataset for analysis
-<<<<<<< HEAD
 # Show clustering algorithm
 • This screenshoot shows the clustering algorithm 
 ![screenshoot](./application/clustering.PNG)
 # Install the requirements inside the app folder
 • $ pip install -r requirements.txt
-=======
 
 # Smartboard_test
 Test repo for the Smartboard project
