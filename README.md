@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
 # Description
 SmartBoard is a smart business dashboard that allows users to apply one or more Data Science algorithms to a dataset (e.g. Regression, Clustering, Classification, Association) to solve a business data problem (such as fraud detection, sales forecasting, customer segmentation ... etc).
 #	Objectif
@@ -30,4 +27,3 @@ with Some functions  generate different views of the sheets:
     Xsheet_to_json generates an array of object.
     sheet_to_formulae generates a list of formulae
 
->>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
