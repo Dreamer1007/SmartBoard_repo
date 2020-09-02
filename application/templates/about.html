@@ -1,0 +1,38 @@
+{% extends "index.html" %}
+{% block content %}
+
+
+    <div class="text-center mt-5">
+        <h1 class="display-1"> Smart Board </h1>
+        <H3  style="font-weight:bold;">everything about us :</H3><br>
+        
+        <h4>  Description:</h4>
+            <p style="font-weight:bold;">SmartBoard is a smart business dashboard that allows users to apply one or more Data Science algorithms <br>to a dataset (e.g. Clustering) to solve a business data problem (such as  customer segmentation ... etc).<br>
+
+        </p>
+       <h4>Objectif:</h4>
+    <p style="font-weight:bold;">Provide an easy to use yet powerful solution for Data Analytics using a predefined <br>algorithms and ready to use data model  for most common data problem. </p>
+
+        <h4>How it works?</h4>
+        <p style="font-weight:bold;">
+•	Companies can upload their data to the dashboard (via http or ftp) in different formats (csv, xlsx)<br>
+•	They can then select an appropriate algorithm (Clustering) to solve a specific business data problem (things like: Customer Segmentation)<br>
+•	Generate a Machine Learning model for different purposes ( Classification…etc.)<br>
+•	Save the generated data model for further analysis (each user/company has his own space to store and restore data model)<br>
+•	Use the predefined model on a new uploaded dataset for analysis.<br></p>
+            <h4>Targeted audience:</h4>
+        <p style="font-weight:bold;">
+•	Companies from different industries including: pharmacy, telecom, food industry. <br>Other companies can use solution if it fit their needs.<br>
+•	Business model: this solution will be provided for free as SAAS, <br>however; the uploaded dataset is limited, companies can subscribe for dedicated hosting <br> or self-hosting, consultancy can be provided if needed, the full code source is provided in public hosting service.<br>
+    </p><br>
+    <h4>Technical details:</h4>
+<p style="font-weight:bold;">
+•	The full solution will be written in Python 3, using the most common open source libraries.<br>
+•	We used python Web framework Flask with many other extensions.<br>
+•	The front-end tier is provided (template, css…), however the user experience<br> should be simplified for non-technical users with more visualization libraries,<br> charts & graphs should be included to provide users with more illustration so they <br>can judge the quality of the output easily<br>
+•	Heavy tasks (things like Deep learning, neural nets…) should be scheduled using a <br>pool of worker process which will notify the user once it’s finished <br>(Pool worker is allowed only for premium user).<br>
+
+    </p>
+</div>
+
+{% endblock content %}
