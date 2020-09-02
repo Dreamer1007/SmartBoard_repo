@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+/* oss.sheetjs.com (C) 2014-present SheetJS -- http://sheetjs.com */
+/* vim: set ts=2: */
+>>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
 
 /** drop target **/
 var _target = document.getElementById('drop');
@@ -9,7 +14,11 @@ var spinner;
 
 var _workstart = function() { spinner = new Spinner().spin(_target); }
 var _workend = function() { spinner.stop(); }
+<<<<<<< HEAD
 ;
+=======
+
+>>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
 /** Alerts **/
 var _badfile = function() {
   alertify.alert('This file does not appear to be a valid Excel file.  If we made a mistake, please send this file to <a href="mailto:dev@sheetjs.com?subject=I+broke+your+stuff">dev@sheetjs.com</a> so we can take a look.', function(){});
@@ -47,8 +56,13 @@ var make_buttons = function(sheetnames, cb) {
 var cdg = canvasDatagrid({
   parentNode: _grid
 });
+<<<<<<< HEAD
 cdg.style.height = '85%';
 cdg.style.width = '80%';
+=======
+cdg.style.height = '100%';
+cdg.style.width = '100%';
+>>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
 
 function _resize() {
   _grid.style.height = (window.innerHeight - 200) + "px";
@@ -94,6 +108,7 @@ DropSheet({
     large: _large,
     foo: 'bar'
   }
+<<<<<<< HEAD
 })
 /*JS ADVENCE  */
 var TabInput = []
@@ -130,3 +145,6 @@ $(document).ready( function(){
          
    })});
 
+=======
+})
+>>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d

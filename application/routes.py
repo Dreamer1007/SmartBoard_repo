@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from flask import render_template, url_for, flash, redirect, request, jsonify, send_from_directory
 from application import app, db, bcrypt, uploads_dir
 from application.forms import RegistrationForm, LoginForm
@@ -16,16 +17,39 @@ def index():
 @app.route("/home")
 def home():
     return render_template("home.html")
+=======
+from flask import render_template, url_for, flash, redirect, request
+from application import app, db, bcrypt
+from application.forms import RegistrationForm, LoginForm
+from application.models import User, Roles
+from flask_login import login_user, current_user, logout_user, login_required
+
+@app.route("/")
+@app.route("/acceuil")
+def acceuil():
+    return render_template('acceuil.html')
+
+>>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
 
 @app.route("/about")
 def about():
     return render_template("about.html")
 
+<<<<<<< HEAD
+=======
+@app.route("/home")
+def home():
+    return render_template("home.html")
+>>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:
+<<<<<<< HEAD
         return redirect(url_for('blank'))
+=======
+        return redirect(url_for('acceuil'))
+>>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
     form = RegistrationForm()
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
@@ -40,18 +64,27 @@ def register():
 @app.route("/login", methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
+<<<<<<< HEAD
         return redirect(url_for('account'))
+=======
+        return redirect(url_for('home'))
+>>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
         if user and bcrypt.check_password_hash(user.password, form.password.data):
             login_user(user, remember=form.remember.data)
             next_page = request.args.get('next')
+<<<<<<< HEAD
             return redirect(next_page) if next_page else redirect(url_for('account'))
+=======
+            return redirect(next_page) if next_page else redirect(url_for('home'))
+>>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
         else:
             flash('Login Unsuccessful. Please check email and password', 'danger')
     return render_template('login.html', title='Login', form=form)
 
+<<<<<<< HEAD
 
 @app.route("/preview")
 def preview():
@@ -70,12 +103,20 @@ def blank():
 @app.route("/menu")
 def menu():
     return render_template('menu.html')
+=======
+@app.route("/logout")
+def logout():
+    logout_user()
+    return redirect(url_for('acceuil'))
+
+>>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
 
 @app.route("/account")
 @login_required
 def account():
     return render_template('account.html', title='Account')
 
+<<<<<<< HEAD
 @app.route("/test", methods=['GET', 'POST'])
 def test():
     test = Clustering.show_test()
@@ -106,3 +147,12 @@ def receive_data():
     algo = Clustering(f.filename,content[0],content[1])
     test = algo.show_test(content)
     return jsonify({"test":test})
+=======
+
+
+
+
+
+
+
+>>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d

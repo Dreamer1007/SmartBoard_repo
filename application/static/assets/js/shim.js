@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+// From https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
+>>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
 if (!Object.keys) {
   Object.keys = (function () {
     var hasOwnProperty = Object.prototype.hasOwnProperty,

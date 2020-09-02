@@ -5,7 +5,11 @@ instance/*
 
 ### Flask.Python Stack ###
 # Byte-compiled / optimized / DLL files
+<<<<<<< HEAD
 application/__pycache__/
+=======
+__pycache__/
+>>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
 *.py[cod]
 *$py.class
 
@@ -156,8 +160,11 @@ dmypy.json
 # Pyre type checker
 
 
+<<<<<<< HEAD
 # db
 ./application/site.db
 
 # node modules
 ./application/static/node_modules
+=======
+>>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d

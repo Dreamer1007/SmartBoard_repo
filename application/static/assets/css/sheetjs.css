@@ -1,7 +1,18 @@
 html {
+<<<<<<< HEAD
   overflow: auto;
   background-color:#e4e5e6;
 }
+=======
+  overflow: hidden;
+  background-color:white;
+<<<<<<< HEAD
+
+=======
+>>>>>>> 984396ed15f26f0bfa85bc4224a95fd3213e3027
+}
+
+>>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
 #drop{
   border:2px dashed #bbb;
   -moz-border-radius:5px;
@@ -9,6 +20,7 @@ html {
   border-radius:5px;
   padding:25px;
   text-align:center;
+<<<<<<< HEAD
   /*width:128px;
   font:20pt bold,"Vollkorn";color:#bbb*/
 }
@@ -32,10 +44,29 @@ html {
 }
 
 
+=======
+  width:128px;
+  font:20pt bold,"Vollkorn";color:#bbb
+}
+
+#left {
+  width:188px;
+  position:absolutes;
+  left:0;
+}
+#right {
+  position:absolute;
+  left:200px;
+}
+#logo {
+  padding:25px;
+}
+>>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
 #header {
   height:168px;
 }
 #grid {
+<<<<<<< HEAD
   height: 50px;
   display: none;
 }
@@ -45,9 +76,19 @@ html {
   overflow-y: scroll;
   overflow-x: scroll;
 }
+=======
+  height: 100px;
+  display: none;
+}
+
+>>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
 .winpt { width:98%; }
 .success { color: #468847; }
 .error { color: #b94a48; }
 .info { color: #3a87ad; }
+<<<<<<< HEAD
 .pre { white-space: pre-wrap; }
 .pre { white-space: pre-wrap; }
+=======
+pre { white-space: pre-wrap; }
+>>>>>>> 4985a5e31218d9e8d8eea10957f4520baefe9a7d
